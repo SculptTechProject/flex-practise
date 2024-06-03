@@ -181,6 +181,10 @@ svg {
   font-weight: 700;
 }
 
+.nav-link:hover{
+  color: #ccecff;
+}
+
 .navBottom {
   padding-top: 4rem;
   padding-bottom: 8rem;
@@ -191,6 +195,9 @@ svg {
   -webkit-box-shadow: 3px 3px 12px 1px rgba(194, 194, 194, 1);
   -moz-box-shadow: 3px 3px 12px 1px rgba(194, 194, 194, 1);
   box-shadow: 3px 3px 12px 1px rgba(194, 194, 194, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search {
@@ -203,6 +210,7 @@ svg {
 .buttonSearch {
   fill: black;
   margin-right: 20px;
+  transition: fill 200ms;
 }
 
 .buttonSearch:hover {
@@ -210,5 +218,41 @@ svg {
 }
 
 .searchInput {
-  width: 45em;
+  width: 35em;
+}
+
+.ringSvg {
+  fill: black;
+  margin-right: 20px;
+  transition: fill 200ms;
+}
+
+.ringSvg:hover{
+  fill: rgb(80, 80, 80);
+  cursor: pointer;
+}
+
+.avatarImg {
+  max-width: 100%;
+  max-height: auto;
+  height: 5em;
+  cursor: pointer;
+}
+
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3em;
+}
+
+.avatarImgBottom{
+  max-width: 100%;
+  max-height: auto;
+  width: 8em;
+}
+
+.greeting{
+  display:flex;
+  align-items: flex-end;
 }
