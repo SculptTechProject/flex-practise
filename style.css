@@ -1,56 +1,137 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
   font-family: "Poppins", sans-serif;
+  background-color: #e8eaffd7;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Start of CSS */
-.sideBar{
+.sideBar {
   background-color: rgb(85, 170, 255);
   color: white;
 }
 
-
-.header{
+.header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -59,7 +140,7 @@ table {
   margin-bottom: 20px;
 }
 
-.iconDashboard{
+.iconDashboard {
   max-width: 100%;
   max-height: auto;
   height: 4em;
@@ -67,32 +148,67 @@ table {
   fill: white;
 }
 
-.dasboardText{
+.dasboardText {
   font-weight: 600;
 }
 
-svg{
+svg {
   max-width: 100%;
   max-height: auto;
   height: 2em;
-  fill: white;
 }
 
-.home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy{
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy {
   display: flex;
   justify-content: start;
   gap: 0.1rem;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 2rem;
+  fill: white;
 }
 
-.nav-link{
+.nav-link {
   color: white;
   font-weight: 700;
 }
 
-.navBottom{
+.navBottom {
   padding-top: 4rem;
   padding-bottom: 8rem;
+}
+
+.navbarMain {
+  border-radius: 12px;
+  -webkit-box-shadow: 3px 3px 12px 1px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 3px 3px 12px 1px rgba(194, 194, 194, 1);
+  box-shadow: 3px 3px 12px 1px rgba(194, 194, 194, 1);
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonSearch {
+  fill: black;
+  margin-right: 20px;
+}
+
+.buttonSearch:hover {
+  fill: rgb(80, 80, 80);
+}
+
+.searchInput {
+  width: 45em;
 }
